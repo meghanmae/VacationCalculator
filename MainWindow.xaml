@@ -1,0 +1,35 @@
+﻿<Window x:Class="VacationCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VacationCalculator"
+        mc:Ignorable="d"
+        Title="Vacation Time Calculator" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="title" Content="Vacation Time Calculator" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="117,21,0,0" VerticalAlignment="Top" Width="529" FontSize="22" Foreground="CornflowerBlue" FontFamily="Source Sans Pro" FontWeight="Normal"/>
+
+        <!-- CURRENT VACATION INFORMATION -->
+        <Label x:Name="startDateLabel" Content="Start Date: " HorizontalAlignment="Left" Margin="36,59,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Source Sans Pro" FontWeight="Normal"/>
+        <DatePicker x:Name="startDatePicker" HorizontalAlignment="Left" Margin="133,59,0,0" VerticalAlignment="Top" SelectedDateChanged="StartDateChanged" FontSize="20" RenderTransformOrigin="0.55,0.469" FontFamily="Source Sans Pro"/>
+
+        <Label x:Name="totalHoursLabel" Content="Total Vacation Earned as of last month: " HorizontalAlignment="Left" Margin="36,99,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Source Sans Pro"/>
+        <Label x:Name="totalHoursValueLabel" Content="--" HorizontalAlignment="Left" Margin="373,99,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Source Sans Pro" Width="299"/>
+
+        <Label x:Name="currentHoursLabel" Content="What are your current vacation horus?" HorizontalAlignment="Left" Margin="36,139,0,0" VerticalAlignment="Top" Height="37" Width="352" FontSize="20" FontFamily="Source Sans Pro"/>
+        <TextBox x:Name="currentHoursTextBox" HorizontalAlignment="Left" Margin="359,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" TextChanged="CurrentVacationHoursEntered" FontSize="20" FontFamily="Source Sans Pro"/>
+
+        <!-- FUTURE VACATION INFORMATION -->
+        <Label x:Name="futureDateLabel" Content="Future Date:" HorizontalAlignment="Left" Margin="35,219,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Source Sans Pro"/>
+        <DatePicker x:Name="futureDatePicker" HorizontalAlignment="Left" Margin="143,218,0,0" SelectedDateChanged="FutureDateChanged" FontSize="20" FontFamily="Source Sans Pro" VerticalAlignment="Top"/>
+
+        <Label x:Name="plannedTimeOffLabel" Content="Number of vacation days planned to be used" HorizontalAlignment="Left" Margin="35,259,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Source Sans Pro"/>
+        <TextBox x:Name="plannedTimeOffTextBox" HorizontalAlignment="Left" Margin="416,259,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" TextChanged="PlannedTimeOffEntered" FontSize="20" FontFamily="Source Sans Pro"/>
+
+        <Label x:Name="totalVacationLeftlabel" Content="Total Vacation Left: " HorizontalAlignment="Left" Margin="36,319,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Source Sans Pro" FontWeight="Bold"/>
+        <Label x:Name="totalVacationLeftValueLabel" Content="0" HorizontalAlignment="Left" Margin="209,319,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Source Sans Pro" FontWeight="Bold" Width="309"/>
+
+
+        <Label x:Name="errorLabel" Content="Something went wrong!" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="117,363,0,0" VerticalAlignment="Top" Width="529" FontSize="22" Foreground="Red" FontFamily="Source Sans Pro" FontWeight="Normal"/>
+    </Grid>
+</Window>
