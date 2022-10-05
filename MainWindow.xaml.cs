@@ -29,14 +29,14 @@ namespace VacationCalculator
             futureDatePicker.SelectedDate = DateTime.Now;
             ToggleFutureVacationInformationVisibility();
             startDatePicker.SelectedDate = DefaultStartDate;
-            totalHoursValueLabel.Content = Helpers.GetVacationHours(DefaultStartDate, DateTime.Now, 0);
+            totalHoursValueLabel.Content = Helpers.GetVacationHours(DefaultStartDate, DateTime.Now);
 
             ToggleErrorMessage();
         }
 
         private void StartDateChanged(object sender, SelectionChangedEventArgs e)
         {
-            totalHoursValueLabel.Content = Helpers.GetVacationHours(startDatePicker!.SelectedDate!.Value, DateTime.Now, 0);
+            totalHoursValueLabel.Content = Helpers.GetVacationHours(startDatePicker!.SelectedDate!.Value, DateTime.Now);
         }
 
         private void CurrentVacationHoursEntered(object sender, TextChangedEventArgs e)

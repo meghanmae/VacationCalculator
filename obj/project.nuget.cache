@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "odDWWw1+EKvmaLNz6QgnRHancxkUu3buKAcUOJYq0iRE3Ik+DX0eSn5Dc7AQfRKc9K8tGePZc6/b79PtF/Xffg==",
+  "dgSpecHash": "datq21ysDcqOs4YaF6w+5GpKQP+FmsWK9/vS/9tsojAjDTcjiYQEfd6cWshNjZMHkLO/ExwHRBfvNyBOoZoX2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\horse\\Desktop\\VacationCalculator\\VacationCalculator\\VacationCalculator.csproj",
+  "projectFilePath": "C:\\Users\\MegWoodford\\source\\repos\\VacationCalculator\\VacationCalculator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\horse\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
-    "C:\\Users\\horse\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512",
-    "C:\\Users\\horse\\.nuget\\packages\\nodatime\\3.0.5\\nodatime.3.0.5.nupkg.sha512",
-    "C:\\Users\\horse\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+    "C:\\Users\\MegWoodford\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\MegWoodford\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512",
+    "C:\\Users\\MegWoodford\\.nuget\\packages\\nodatime\\3.0.5\\nodatime.3.0.5.nupkg.sha512",
+    "C:\\Users\\MegWoodford\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
