@@ -20,13 +20,9 @@ namespace VacationCalculator
           Each additional year                  +1 day (8hrs)                         +20m
           Maximum                               20 days (160hrs)                     6hrs 40m
          */
-        private const double BASE_VACATION_HRS = 80;
+        //(10/12)*8
         private const double BASE_ACCRUAL_RATE_HRS = (3.3333333333333333 * 2);
-
-        private const double ADDITIONAL_VACATION_PER_YR_HRS = 8;
         private const double ADDITIONAL_ACCRUAL_RATE_PER_YR_HRS = (0.3333333333333333 * 2);
-
-        private const double MAX_VACATION_HRS = 160;
         private const double MAX_ACCRUAL_RATE_HRS = (6.6666666666666666 * 2);
 
         public static double GetVacationHours(DateTime startDate, DateTime endDate)
@@ -55,19 +51,6 @@ namespace VacationCalculator
 
         public static double GetFutureVacationHorusFromCurrentVacationTime(DateTime startDate, DateTime endDate, double currentVacation, double daysOff = 0)
         {
-            //// Get number of months total
-            //if (startDate > endDate) return 0;
-            //int months = MonthDiff(DateTime.Now, endDate);
-
-            //// Get number of years after start date for extra time
-            //LocalDate start = new(startDate.Year, startDate.Month, startDate.Day);
-            //LocalDate end = new(endDate.Year, endDate.Month, endDate.Day);
-            //int years = Period.Between(start, end).Years;
-
-            //double futureTime = (months * ((years * ADDITIONAL_VACATION_PER_YR_HRS) + (ADDITIONAL_ACCRUAL_RATE_PER_YR_HRS * 2))) + currentVacation;
-            //return futureTime - (daysOff * 8);
-
-
             var totalAccruedVacation = GetVacationHours(startDate, DateTime.Now);
             var vacationUsed = totalAccruedVacation - currentVacation;
 
